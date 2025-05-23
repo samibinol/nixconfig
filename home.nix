@@ -16,7 +16,13 @@
 
     # SET THIS TO THE SAME NUMBER AS IN CONFIGURATION.NIX AND NEVER CHANGE IT
     stateVersion = "25.05";
-   };
+
+    shellAliases = {
+      nixconfig = "nano /etc/nixos/configuration.nix";
+      nixhome = "nano /etc/nixos/home.nix";
+      nixbuild = "bash /etc/nixos/rebuild.sh";
+    };
+  };
 
   programs = {
     git = {
@@ -25,12 +31,4 @@
       userName = "sammy";
     };
   };
-  
-  shellAliases = {
-    nixconfig = "nano /etc/nixos/configuration.nix";
-    nixhome = "nano /etc/nixos/home.nix";
-    nixbuild = "bash /etc/nixos/rebuild.sh";
-
-  };
-
 }

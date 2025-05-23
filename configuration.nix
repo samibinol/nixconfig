@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      <home-manager/nixos>
     ];
 
   # Bootloader.
@@ -147,5 +146,26 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.05"; # Did you read the comment?
+
+  programs.zsh = {
+    enable = true;
+    enableBashCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+  };
+
+  programs.zsh.ohMyZsh = {
+    enable = true;
+    plugins = [ "git" ];
+    custom = "$HOME/.oh-my-zsh/custom/";
+    theme = "powerlevel10k/powerlevel10k";
+  };
+  users.defaultUserShell = pkgs.zsh;
+  system.userActivationScripts.zshrc = "touch .zshrc";
+  environment.shells = pkgs.zsh;
+  environment.loginShellInit = ''
+    # equivalent to .profile
+    # https://search.nixos.org/options?show=environment.loginShellInit
+  '';
 
 }

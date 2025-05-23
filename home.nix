@@ -17,4 +17,20 @@
     # SET THIS TO THE SAME NUMBER AS IN CONFIGURATION.NIX AND NEVER CHANGE IT
     stateVersion = "25.05";
    };
+
+  programs = {
+    git = {
+      enable = true;
+      userEmail = "samibinol@icloud.com";
+      userName = "sammy";
+    };
+  };
+  
+  shellAliases = {
+    nixconfig = "nano /etc/nixos/configuration.nix";
+    nixhome = "nano /etc/nixos/home.nix";
+    nixbuild = "bash /etc/nixos/rebuild.sh";
+
+  };
+
 }

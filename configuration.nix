@@ -112,7 +112,7 @@
     gh
     tidal-hifi
     fastfetch
-    zsh
+    zsh    
   ];
   
     

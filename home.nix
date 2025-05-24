@@ -22,6 +22,7 @@
       nixhome = "nano /etc/nixos/home.nix";
       nixbuild = "bash /etc/nixos/rebuild.sh";
     };
+    programs.zsh.shellAliases = cfg.shellAliases;
   };
 
   programs = {

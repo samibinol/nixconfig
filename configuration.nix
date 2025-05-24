@@ -115,6 +115,7 @@
     zsh    
     telegram-desktop
     appimage-run
+    obs-studio
   ];
   
     

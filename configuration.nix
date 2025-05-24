@@ -136,6 +136,7 @@
     obs-studio
     vesktop
     helvum
+    discord-rpc
   ];
   
     

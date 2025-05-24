@@ -117,6 +117,7 @@
     appimage-run
     obs-studio
     vesktop
+    helvum
   ];
   
     

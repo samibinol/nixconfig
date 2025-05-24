@@ -167,6 +167,7 @@
     vesktop
     helvum
     discord-rpc
+    icu
   ];
   
     

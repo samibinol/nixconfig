@@ -80,7 +80,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-    extraConfig.pipewire.adjust-sample-rate = {
+    extraConfig.pipewire = {
       "default.clock.rate" = 192000;
       "default.allowed-rates" = [ 192000 ];
       "default.clock.quantum" = 32;

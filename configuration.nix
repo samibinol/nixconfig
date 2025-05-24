@@ -109,7 +109,7 @@
   programs.firefox.enable = true;
   
   # Install kdeconnect
-  programs.plasma5Packages.kdeconnect-kde.enable = true;
+  plasma5Packages.kdeconnect-kde.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

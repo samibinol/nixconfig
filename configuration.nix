@@ -113,7 +113,7 @@
   programs.firefox.enable = true;
   
   # Install kdeconnect
-  kdePackages.kdeconnect-kde.enable = true;
+  # kdePackages.kdeconnect-kde.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

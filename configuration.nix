@@ -126,6 +126,7 @@
     obs-studio
     vesktop
     helvum
+    kdeconnect
   ];
   
     

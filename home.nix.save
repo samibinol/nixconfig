@@ -32,16 +32,15 @@
       userName = "sammy";
     };
     zsh = {
-      enable = true;
-      shellAliases = {
-        ll = "ls -l";
-        update = "sudo nixos-rebuild switch";
-      };
+    enable = true;
+    shellAliases = {
+      ll = "ls -l";
+      update = "sudo nixos-rebuild switch";
     };
     zsh.oh-my-zsh = {
-      enable = true;
-      plugins = [ ];
-      theme = "mikeh";
-    };
+    enable = true;
+    plugins = [ ];
+    theme = "agnoster";
+  };
   };
 }

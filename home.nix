@@ -22,7 +22,7 @@
       nixhome = "nano /etc/nixos/home.nix";
       nixbuild = "bash /etc/nixos/rebuild.sh";
     };
-    programs.zsh.shellAliases = cfg.shellAliases;
+
   };
 
   programs = {
@@ -31,5 +31,17 @@
       userEmail = "samibinol@icloud.com";
       userName = "sammy";
     };
+  };
+  programs.zsh = {
+    enable = true;
+    shellAliases = {
+      ll = "ls -l";
+      update = "sudo nixos-rebuild switch";
+    };
+  };
+  programs.zsh.oh-my-zsh = {
+    enable = true;
+    plugins = [ ];
+    theme = "agnoster";
   };
 }

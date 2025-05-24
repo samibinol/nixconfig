@@ -80,15 +80,14 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-    extraConfig.pipewire = {
-      "10-clock-rate" = {
-        "context.properties" = {
-          "default.clock.rate" = 44100;
-        };
-      };
-      # "default.allowed-rates" = [ 192000 ];
-      "default.clock.quantum" = 32;
-    };
+    configPackages = [
+        (pkgs.writeTextDir "share/pipewire/pipewire.conf.d/10-high-sample-rate.conf" ''
+          context.properties = {
+            default.clock.allowed-rates = [ 44100 48000 88200 96000 192000 384000 768000 ]
+            default.clock.rate = 384000
+          }
+        '')
+      ];
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;

@@ -109,7 +109,7 @@
   programs.firefox.enable = true;
   
   # Install kdeconnect
-  programs.kdeconnect.enable = true;
+  programs.kdeconnect-kde.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -129,7 +129,6 @@
     obs-studio
     vesktop
     helvum
-    kdeconnect
   ];
   
     

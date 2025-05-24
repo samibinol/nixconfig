@@ -1,5 +1,5 @@
 #Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
+your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
@@ -101,7 +101,7 @@
   users.users.sam = {
     isNormalUser = true;
     description = "sammy";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
@@ -206,6 +206,5 @@
   programs.zsh.enable = true;
   users.users.sam.shell = pkgs.zsh;
   programs.adb.enable = true;
-  users.users.sam.extraGroups = ["adbusers"];
 
 }

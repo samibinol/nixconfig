@@ -114,6 +114,7 @@
     fastfetch
     zsh    
     telegram-desktop
+    appimage-run
   ];
   
     

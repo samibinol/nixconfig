@@ -114,7 +114,16 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-  
+  programs.steam = {
+      enable = true;
+      remotePlay.openFirewall = true;
+      dedicatedServer.openFirewall = true;
+      localNetworkGameTransfers.openFirewall = true;
+      extraCompatPackages = [ pkgs.proton-ge-bin ];
+      extest = {
+        enable = true;
+      };
+    };  
   # Install kdeconnect
   # kdePackages.kdeconnect-kde.enable = true;
 

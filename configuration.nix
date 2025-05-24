@@ -88,7 +88,7 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
-    default.sa
+    #default.sa
   };
 
   # Enable touchpad support (enabled default in most desktopManager).

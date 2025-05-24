@@ -84,8 +84,6 @@
       "default.clock.rate" = 192000;
       "default.allowed-rates" = [ 192000 ];
       "default.clock.quantum" = 32;
-      "default.clock.min-quantum" = 32;
-      "default.clock.min-quantum" = 32;
     }
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)

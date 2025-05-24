@@ -31,17 +31,17 @@
       userEmail = "samibinol@icloud.com";
       userName = "sammy";
     };
-  };
-  programs.zsh = {
-    enable = true;
-    shellAliases = {
-      ll = "ls -l";
-      update = "sudo nixos-rebuild switch";
+    zsh = {
+      enable = true;
+      shellAliases = {
+        ll = "ls -l";
+        update = "sudo nixos-rebuild switch";
+      };
     };
-  };
-  programs.zsh.oh-my-zsh = {
-    enable = true;
-    plugins = [ ];
-    theme = "agnoster";
+    zsh.oh-my-zsh = {
+      enable = true;
+      plugins = [ ];
+      theme = "agnoster";
+    };
   };
 }

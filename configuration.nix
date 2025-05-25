@@ -168,7 +168,7 @@
     helvum
     discord-rpc
     icu
-    bambu-studio
+    orca-slicer-v2.3.0
   ];
   
     

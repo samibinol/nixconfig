@@ -207,5 +207,6 @@
   programs.zsh.enable = true;
   users.users.sam.shell = pkgs.zsh;
   programs.adb.enable = true;
+  services.flatpak.enable = true;
 
 }

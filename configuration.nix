@@ -168,7 +168,7 @@
     helvum
     discord-rpc
     icu
-    orca-slicer-v2.3.0
+    orca-slicer
   ];
   
     

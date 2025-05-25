@@ -168,6 +168,7 @@
     helvum
     discord-rpc
     icu
+    bambu-studio
   ];
   
     

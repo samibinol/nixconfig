@@ -170,6 +170,7 @@
     icu
     orca-slicer
     alsa-utils
+    prismlauncher
   ];
   
     

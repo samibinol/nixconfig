@@ -169,6 +169,7 @@
     discord-rpc
     icu
     orca-slicer
+    alsa-utils
   ];
   
     

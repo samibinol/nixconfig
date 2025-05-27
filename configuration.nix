@@ -129,7 +129,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
+  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -212,5 +212,10 @@
   users.users.sam.shell = pkgs.zsh;
   programs.adb.enable = true;
   services.flatpak.enable = true;
-
+  
+  security.pam.services = {
+    login.u2fAuth = true;
+    sudo.u2fAuth = true;
+  };
+  
 }

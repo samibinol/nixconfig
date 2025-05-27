@@ -136,7 +136,7 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     
     (let base = pkgs.appimageTools.defaultFhsEnvArgs; in
-      pkgs.buildFHSUserEnv (base // {
+      pkgs.buildFHSEnv (base // {
       name = "fhs";
       targetPkgs = pkgs: 
         # pkgs.buildFHSUserEnv provides only a minimal FHS environment,
@@ -174,6 +174,11 @@
     ncdu
     pam_u2f
     yubioath-flutter
+    yubikey-touch-detector
+    yubikey-personalization-gui
+    yubikey-personalization
+    libu2f-host
+    yubico-pam
   ];
   
     

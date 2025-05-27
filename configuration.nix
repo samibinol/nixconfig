@@ -173,6 +173,7 @@
     prismlauncher
     ncdu
     pam_u2f
+    yubioath-flutter
   ];
   
     

@@ -171,6 +171,7 @@
     orca-slicer
     alsa-utils
     prismlauncher
+    ncdu
   ];
   
     

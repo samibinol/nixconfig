@@ -224,6 +224,12 @@
     sudo.u2fAuth = true;
   };
 
+  security.pam.u2f = {
+    control = "sufficient";
+    enable = true;
+    settings.authfile = pkgs.writeText "u2f-auth-file" '' <file_content> '';
+  };
+
   #services.udev.extraRules = ''
   #    ACTION=="remove",\
   #     ENV{ID_BUS}=="usb",\

@@ -222,6 +222,8 @@
   security.pam.services = {
     login.u2fAuth = true;
     sudo.u2fAuth = true;
+    login.unixAuth = false;
+    sudo.unixAuth = false;
   };
 
   security.pam.u2f = {

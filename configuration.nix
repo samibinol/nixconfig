@@ -229,6 +229,8 @@
   security.pam.services = {
     sudo.u2fAuth = true;
     sddm.u2fAuth = true;
+    sddm.unixAuth = false;
+    sudo.unixAuth = false;
   };
 
   security.pam.u2f = {

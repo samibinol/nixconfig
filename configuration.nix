@@ -179,9 +179,16 @@
     yubikey-personalization
     libu2f-host
     yubico-pam
+    nheko
   ];
   
-    
+  
+  nixpkgs.config.permittedInsecurePackages = [
+                "olm-3.2.16"
+              ];
+  
+
+  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
@@ -222,8 +229,6 @@
   security.pam.services = {
     login.u2fAuth = true;
     sudo.u2fAuth = true;
-    login.unixAuth = false;
-    sudo.unixAuth = false;
   };
 
   security.pam.u2f = {

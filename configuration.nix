@@ -181,6 +181,7 @@
     yubico-pam
     nheko
     mullvad-vpn
+    arduino-ide
   ];
   
   

@@ -229,6 +229,9 @@
   security.pam.services = {
     login.u2fAuth = true;
     sudo.u2fAuth = true;
+    sddm.u2fAuth = true;
+    sddm.unixAuth = false;
+    sudo.unixAuth = false;
   };
 
   security.pam.u2f = {
@@ -236,6 +239,11 @@
     enable = true;
     settings.authfile = pkgs.writeText "u2f-auth-file" '' <file_content> '';
   };
+
+  #pam.services.sddm.unixAuth = false; 
+  #pam.services.sddm.u2fAuth = true;
+  #pam.services.sudo.u2fAuth = true;
+
 
   #services.udev.extraRules = ''
   #    ACTION=="remove",\

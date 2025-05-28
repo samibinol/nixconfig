@@ -227,7 +227,6 @@
   services.flatpak.enable = true;
   
   security.pam.services = {
-    login.u2fAuth = true;
     sudo.u2fAuth = true;
     sddm.u2fAuth = true;
   };

@@ -180,7 +180,7 @@
     libu2f-host
     yubico-pam
     nheko
-    mullvad
+    mullvad-vpn
   ];
   
   

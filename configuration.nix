@@ -230,14 +230,12 @@
     login.u2fAuth = true;
     sudo.u2fAuth = true;
     sddm.u2fAuth = true;
-    sddm.unixAuth = false;
-    sudo.unixAuth = false;
   };
 
   security.pam.u2f = {
     control = "sufficient";
     enable = true;
-    settings.authfile = pkgs.writeText "u2f-auth-file" '' <file_content> '';
+    settings.authfile = pkgs.writeText "u2f-auth-file" ''sam:XZbpybn52rrT0lm1oCFnbj1Tf4mv7vG7FJEv5mBvhpSu/IrgUlW5N8YLesl9/+Be0ojCrizkEq8I6ZgGOiIAsw==,mWR1bh1dmjbd87Wr+dsDKDAGXiwI5m7T49lHSp1M/zW6b1PqfEPh0EnFdFVrXSlyl9j7lP9IarT7618knttCQA==,es256,+presence'';
   };
 
   #pam.services.sddm.unixAuth = false; 

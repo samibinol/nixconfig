@@ -21,6 +21,7 @@
       nixconfig = "nano /etc/nixos/configuration.nix";
       nixhome = "nano /etc/nixos/home.nix";
       nixbuild = "bash /etc/nixos/rebuild.sh";
+      nixupdate = "bash /etc/nixos/update.sh";
     };
 
   };

@@ -33,9 +33,9 @@
   
   security.pam.services = {
     login.u2fAuth = true;
-    sudo.u2fAuth = true;
+    sudo.u2fAuth = false;
     sddm.u2fAuth = true;
-    sudo.unixAuth = false;
+    sudo.unixAuth = true;
     login.unixAuth = false;
   };
 

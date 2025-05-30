@@ -142,6 +142,17 @@
   programs.zsh.enable = true;
   users.users.sam.shell = pkgs.zsh;
   
+  security.pam.services = {
+    login.u2fAuth = true;
+    sudo.u2fAuth = true;
+    sddm.u2fAuth = true;
+    sddm.unixAuth = false;
+    sudo.unixAuth = false;
+    login.unixAuth = false;
+  };
+
+
+  
   security.pam.u2f = {
     control = "sufficient";
     enable = true;

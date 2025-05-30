@@ -203,4 +203,11 @@
   users.users.sam.shell = pkgs.zsh;
   programs.adb.enable = true;
   services.flatpak.enable = true;
+
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-curses;
+    enableSSHSupport = true;
+  };
 }

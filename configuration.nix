@@ -159,6 +159,7 @@
     nheko
     mullvad-vpn
     arduino-ide
+    gnupg
   ];
   
   

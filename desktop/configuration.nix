@@ -2,7 +2,7 @@
 
 {
   networking = {
-    hostname = "nixos-desktop";
+    hostName = "nixos-desktop";
   };
 
   # Enable CUPS to print documents.

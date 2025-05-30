@@ -17,6 +17,17 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  networking = {
+    hostName = "nixos"; # Define your hostname.
+    firewall = rec {
+      allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
+      allowedUDPPortRanges = allowedTCPPortRanges;
+    };
+  };
+
+
+  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -219,10 +230,10 @@
   
   security.pam.services = {
     login.u2fAuth = true;
-    sudo.u2fAuth = true;
+    sudo.u2fAuth = false;
     sddm.u2fAuth = true;
     sddm.unixAuth = false;
-    sudo.unixAuth = false;
+    sudo.unixAuth = true;
     login.unixAuth = false;
   };
 

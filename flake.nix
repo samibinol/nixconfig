@@ -51,15 +51,21 @@
             };
         in
         {
-          # CHANGE THIS TO YOUR HOSTNAME
-          nixos = mkNixosSystem {
+          nixos-desktop = mkNixosSystem {
             system = "x86_64-linux";
-          # CHANGE THIS TO YOUR HOSTNAME
-            hostname = "nixos";
+            hostname = "nixos-desktop";
             extraModules = [
               ./desktop/configuration.nix
-              # CHANGE THIS TO YOUR USERNAME
               { home-manager.users.sam.imports = [ ./desktop/home.nix ]; }
+            ];
+          };
+
+	  nixos-laptop = mkNixosSystem {
+            system = "x86_64-linux";
+            hostname = "nixos-laptop";
+            extraModules = [
+              ./laptop/configuration.nix
+              { home-manager.users.sam.imports = [ ./laptop/home.nix ]; }
             ];
           };
         };

@@ -161,6 +161,7 @@
     arduino-ide
     gnupg
     pinentry-curses
+    vlc
   ];
   
   

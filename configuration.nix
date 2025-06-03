@@ -162,6 +162,7 @@
     gnupg
     pinentry-curses
     vlc
+    python3Full
   ];
   
   

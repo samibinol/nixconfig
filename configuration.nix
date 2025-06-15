@@ -21,7 +21,8 @@
     firewall = rec {
       allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
       allowedUDPPortRanges = allowedTCPPortRanges;
-      allowedUDPPorts = [ 2021 ];
+      allowedUDPPorts = [ 2021 9943 9944 ];
+      allowedTCPPorts = [ 2021 9943 9944 ];
     };
   };
 
@@ -167,6 +168,7 @@
     libreoffice
     htop
     alvr
+    gnome-multi-writer
   ];
   
   

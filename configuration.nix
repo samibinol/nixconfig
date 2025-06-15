@@ -165,6 +165,8 @@
     vlc
     python3Full
     libreoffice
+    htop
+    alvr
   ];
   
   

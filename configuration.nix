@@ -36,7 +36,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
   services.resolved = {
-    enable = true;
+    enable = false;
     dnssec = "true";
     domains = [ "~." ];
     fallbackDns = [ "8.8.8.8" "8.8.4.4" ];

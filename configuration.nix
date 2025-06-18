@@ -175,6 +175,7 @@
     htop
     alvr
     gnome-multi-writer
+    unrar
   ];
   
   

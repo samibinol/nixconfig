@@ -20,9 +20,9 @@
   networking = {
     firewall = rec {
       allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
-      allowedUDPPortRanges = allowedTCPPortRanges;
+      allowedUDPPortRanges = [ { from = 1714; to = 1764; } { from = 8000; to = 8010; } { from = 47998; to = 48000; } ];
       allowedUDPPorts = [ 2021 9943 9944 ];
-      allowedTCPPorts = [ 2021 9943 9944 ];
+      allowedTCPPorts = [ 2021 9943 9944 47984 47989 47990 48010 ];
     };
   };
 
@@ -44,6 +44,15 @@
   };
     # Set your time zone.
   time.timeZone = "Europe/Berlin";
+  
+  # Enable Sunshine server for game streaming
+  services.sunshine = {
+    enable = true;
+    autoStart = true;
+    capSysAdmin = true;
+    openFirewall = true;
+    
+  };
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";

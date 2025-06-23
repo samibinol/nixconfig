@@ -185,6 +185,8 @@
     alvr
     gnome-multi-writer
     unrar
+    gnome-disk-utility
+    qemu
   ];
   
   
@@ -192,11 +194,14 @@
                 "olm-3.2.16"
               ];
   
-
+  
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # QEMU stuff
+  systemd.tmpfiles.rules = [ "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware" ];
 
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

@@ -187,6 +187,7 @@
     unrar
     gnome-disk-utility
     qemu
+    vscode
   ];
   
   

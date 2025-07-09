@@ -191,6 +191,7 @@
     qemu
     vscode
     gcc
+    gdb
   ];
   
   

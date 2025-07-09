@@ -192,6 +192,7 @@
     vscode
     gcc
     gdb
+    helix
   ];
   
   

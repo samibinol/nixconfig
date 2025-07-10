@@ -193,6 +193,7 @@
     gcc
     gdb
     helix
+    srm
   ];
   
   

@@ -195,6 +195,7 @@
     helix
     srm
     mono
+    chromium
   ];
   
   

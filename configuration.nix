@@ -25,7 +25,11 @@
       allowedTCPPorts = [ 2021 9943 9944 47984 47989 47990 48010 ];
     };
   };
-
+  nixpkgs.config = {
+   chromium = {
+     enableWideVine = true;
+   };
+  };
   # programs.nix-ld.enable = true;
   # programs.nix-ld.libraries = with pkgs; [avrdude xtensa-esp32-elf-gcc];  
 

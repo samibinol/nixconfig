@@ -200,7 +200,7 @@
     srm
     mono
     chromium
-    qemu
+    nasm
   ];
   
   

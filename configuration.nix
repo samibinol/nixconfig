@@ -201,7 +201,7 @@
     mono
     chromium
     nasm
-    clang
+    clang-tools
     lldb
   ];
   

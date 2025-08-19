@@ -204,6 +204,7 @@
     clang-tools
     lldb
     grub2
+    libisoburn
   ];
   
   

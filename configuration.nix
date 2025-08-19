@@ -203,6 +203,7 @@
     nasm
     clang-tools
     lldb
+    grub2
   ];
   
   

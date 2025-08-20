@@ -205,6 +205,8 @@
     lldb
     grub2
     libisoburn
+    sdrpp
+    airspyhf
   ];
   
   

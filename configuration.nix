@@ -207,6 +207,7 @@
     libisoburn
     sdrpp
     airspyhf
+    distrobox
   ];
   
   

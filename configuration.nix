@@ -208,6 +208,7 @@
     sdrpp
     airspyhf
     distrobox
+    docker
   ];
   
   

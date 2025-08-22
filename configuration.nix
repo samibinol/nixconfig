@@ -101,7 +101,7 @@
   users.users.sam = {
     isNormalUser = true;
     description = "sammy";
-    extraGroups = [ "networkmanager" "wheel" "adbusers" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" "dialout" "uucp" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird

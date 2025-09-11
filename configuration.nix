@@ -21,8 +21,8 @@
     firewall = rec {
       allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
       allowedUDPPortRanges = [ { from = 1714; to = 1764; } { from = 8000; to = 8010; } { from = 47998; to = 48000; } ];
-      allowedUDPPorts = [ 2021 9943 9944 ];
-      allowedTCPPorts = [ 2021 9943 9944 47984 47989 47990 48010 ];
+      allowedUDPPorts = [ 2021 5353 9943 9944 ];
+      allowedTCPPorts = [ 2021 9943 9944 47984 47989 47990 48010 57621 ];
     };
   };
   nixpkgs.config = {
@@ -59,7 +59,7 @@
     openFirewall = true;
     
   };
-
+  
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
@@ -210,6 +210,7 @@
     distrobox
     # docker
     uv
+    spotify
   ];
   
   

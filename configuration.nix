@@ -90,6 +90,9 @@
 
   # Configure console keymap
   console.keyMap = "de";
+  
+  # font stuff
+  fonts.fontDir.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;

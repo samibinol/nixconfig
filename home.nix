@@ -11,7 +11,7 @@
     homeDirectory = "/home/sam";
 
     packages = with pkgs; [
-      # PUT ANY PACKAGES YOU WANT INSTALLED HERE
+      pkgs.nerd-fonts.iosevka
     ];
 
     # SET THIS TO THE SAME NUMBER AS IN CONFIGURATION.NIX AND NEVER CHANGE IT
@@ -25,6 +25,8 @@
     };
 
   };
+
+  fonts.fontconfig.enable = true;
 
   programs = {
     git = {

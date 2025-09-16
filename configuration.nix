@@ -214,6 +214,7 @@
     # docker
     uv
     spotify
+    hyfetch
   ];
   
   

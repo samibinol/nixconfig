@@ -215,6 +215,7 @@
     uv
     spotify
     hyfetch
+    jre17_minimal
   ];
   
   

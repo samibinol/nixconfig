@@ -216,6 +216,7 @@
     spotify
     hyfetch
     jre17_minimal
+    youtube-music
   ];
   
   
